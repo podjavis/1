@@ -146,16 +146,23 @@ p {
     font-size: 28px; /* Adjust the font size as needed */
 }
 .Home-title {
-    color: #37ffd7;
+    color: #911ac0;
     font-family: 'Creepster', cursive !important;
     margin-bottom: 20px; /* Adjust the space below the h2 element */
-    font-size: 40px; /* Adjust the font size as needed */
+    font-size: 69px; /* Adjust the font size as needed */
 
 }
 
 
 
 /* ______________ MUSIC ________________ */
+/* .Music-head {
+    color: #911ac0;
+    font-family: 'Creepster', cursive !important;
+    margin-bottom: 60px;
+    font-size: 54px; /* Adjust the font size as needed */
+/* } */ 
+
 .Music-head {
     color: #911ac0;
     font-family: 'Creepster', cursive !important;
@@ -172,19 +179,35 @@ p {
 
 .description {
     font-size: 18px;          /* taille du texte */
-    color: rgb(255, 255, 255);              /* gris clair sur fond sombre       */    
+    color: rgb(220, 220, 220);              /* gris clair sur fond sombre       */    
     line-height: 1.6;         /* espacement des lignes */
     max-width: 900px;         /* largeur max pour la lisibilité */
     margin: 25px auto;        /* centrer horizontalement avec un peu d’espace en haut/bas */
-    font-family: 'Helvetica', sans-serif, cursive;  /* police propre */
+    font-family: 'Poppins', sans-serif, cursive;  /* police propre   'Helvetica'   */
     text-align: center;       /* centré pour l’effet narratif */
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    /* text-shadow: 0 0 5px rgb(0, 0, 0); */
+    /* text-shadow: 0 0 10px #911ac0, 0 0 20px #5a077a; */
+    text-shadow: 2px 2px 2px #000000c2;
+
 }
 
 
+.mylink {
+    color: #37ffd7;       /* couleur néon verte, par exemple */
+    text-decoration: none; /* retire le soulignement si tu veux */
+}
+
+.mylink:hover {
+    color: #911ac0;           /* couleur quand la souris passe dessus */
+}
 
 
-
+.purple-title{
+  color: #911ac0; 
+  font-family: 'Creepster', cursive !important;
+  margin-bottom: 20px; /* Adjust the space below the h2 element */
+  font-size: 40px; /* Adjust the font size as needed */
+}
 
    /* ______________ PROJECT     ________________ */
 .PROJECT-text {
@@ -221,7 +244,125 @@ p {
 
 
 
+/* #startButton {
+    width: 200px;
+    height: 90px;
+    background-image: url('botton_2.png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #bc20ff; 
+    font-size: 24px; 
+} */
 
+
+
+.outbutton {
+    max-width: 80%;
+    text-align: center;
+}
+
+.corner-button:before,
+.corner-button span:before,
+.corner-button:after,
+.corner-button span:after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.corner-button {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    min-width: 100px;
+    min-height: 10px;
+    margin: 20px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #37ffd7;
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-sizing: content-box;
+    border: 2px solid transparent;
+    text-align: center;
+    line-height: 30px;
+    transition: 0.75s ease;
+}
+.corner-button:before {
+    top: -2px;
+    left: -2px;
+    border-top: 2px solid #911ac0;
+    border-top-left-radius: 8px;
+    border-left: 2px solid #911ac0;
+    transition: 0.75s all;
+}
+.corner-button:after {
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid #911ac0;
+    border-top-right-radius: 8px;
+    border-right: 2px solid #911ac0;
+    transition: 0.75s all;
+}
+.corner-button span {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+.corner-button span:before {
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid #911ac0;
+    border-bottom-left-radius: 8px;
+    border-left: 2px solid #911ac0;
+    transition: 0.75s all;
+}
+.corner-button span:after {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 2px solid#911ac0;
+    border-bottom-right-radius: 8px;
+    border-right: 2px solid #911ac0;
+    transition: 0.75s all;
+}
+.corner-button:hover {
+    color: #00ff41;
+    border-radius: 10px;
+}
+.corner-button:hover:before,
+.corner-button:hover:after {
+    border-color:#00ff41;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.corner-button:hover span:before,
+.corner-button:hover span:after {
+    border-color:#00ff41;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+button:hover span::before,
+button:hover span::after {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
 
 
 

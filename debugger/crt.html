@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRT Terminal</title>
+    <link rel="stylesheet" href="crt.css">
+</head>
+<body>
+    <div id="container">
+        <button id="startButton">Start</button>
+
+        <div id="monitor" style="display:none;">
+            <div id="bezel">
+                <div id="crt" class="off">
+                    <canvas id="matrix"></canvas>
+                    <div class="scanline"></div>
+                    <div class="terminal"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="crt.js"></script>
+</body>
+</html>
+
+
+<!-- https://dev.to/ekeijl/retro-crt-terminal-screen-in-css-js-4afh -->
